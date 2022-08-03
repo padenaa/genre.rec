@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "firebase": "^9.9.0",
+    "flask": "^0.2.10"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>genre.rec</title>
+  <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+  <section class="hero is-small is-success has-text-centered">
+    <div class="hero-body">
+      <h1 class="title is-1">
+        genre.rec
+      </h1>
+      <!--add logo or make it pretty later-->
+      <p class="subtitle">
+        Genre detection and recommendations
+      </p>
+    </div>
+  </section>
+  <div class="container">
+    <section class="section ">
+      <h1 class="title is-4 has-text-centered">Enter the url for your favourite song</h1>
+    </section>
+
+        <h2 class="subtitle">
+            What meal will you be having?
+        </h2>
+        
+        <div class = "dropdown is-hoverable">
+               <div class = "dropdown-trigger">
+                  <button class = "button" aria-haspopup = "true" aria-controls = "dropdown-menu">
+                     <span>Choose a meal</span>
+                     <span class = "icon">
+                        <i class = "fas fa-arrow-right"></i>
+                     </span>
+                  </button>
+               </div>
+               <div class = "dropdown-menu" id = "dropdown-menu" role = "menu">
+                  <div class = "dropdown-content">
+                     <button id = "breakfast" class = "dropdown-item" >Breakfast</button>
+                     <button id = "lunch" class = "dropdown-item" >Lunch</button>
+                     <button id = "dinner" class = "dropdown-item">Dinner</button>
+                  </div>
+               </div>
+            </div>
+
+
+        <div class="mt-4">
+            <button id="submitbutton" class="button">Find my genre!</button>
+        </div>
+
+      </div>
+      
+      
+    </div>
+
+    
+    
+    
+  </div>
+  <script src="js/script.js" type="text/javascript" defer></script>
+</body>
+
+</html>
