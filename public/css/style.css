@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+.rubik-font {
+    font-family: 'Rubik Dirt', sans-serif;
+}
+
+.source-font{
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+.is-pink{
+    background-color: rgb(250, 103, 188);
+}
+
+.is-pinker{
+    background-color: rgb(250, 172, 218);
+}
+
+.center {
+    width: 16%;
+    margin-left: 42%;
+    margin-right: 42%;
+}
+
+.card {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    margin-bottom: 50px;
+}

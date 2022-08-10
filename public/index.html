@@ -10,62 +10,41 @@
   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="icon" type="image/x-icon" href="./music.ico">
 </head>
 
 <body>
-  <section class="hero is-small is-success has-text-centered">
+  <section class="hero is-small is-pink has-text-centered">
     <div class="hero-body">
-      <h1 class="title is-1">
+      <h1 class="title is-1 rubik-font">
         genre.rec
       </h1>
-      <!--add logo or make it pretty later-->
-      <p class="subtitle">
+      <p class="subtitle is-6 source-font">
         Genre detection and recommendations
       </p>
     </div>
   </section>
   <div class="container">
     <section class="section ">
-      <h1 class="title is-4 has-text-centered">Enter the url for your favourite song</h1>
+      <h1 class="title is-4 has-text-centered source-font">Enter the url for your favourite song to see the ✨magic✨ happen</h1>
+      <input id="input" class="input is-info is-rounded is-medium source-font" type="text" placeholder="Example: https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT">
+      <br>
+      <br>
+      <button class="button is-rounded is-pink has-text-centered source-font center" id="button">
+        Submit
+      </button>
     </section>
-
-        <h2 class="subtitle">
-            What meal will you be having?
-        </h2>
-        
-        <div class = "dropdown is-hoverable">
-               <div class = "dropdown-trigger">
-                  <button class = "button" aria-haspopup = "true" aria-controls = "dropdown-menu">
-                     <span>Choose a meal</span>
-                     <span class = "icon">
-                        <i class = "fas fa-arrow-right"></i>
-                     </span>
-                  </button>
-               </div>
-               <div class = "dropdown-menu" id = "dropdown-menu" role = "menu">
-                  <div class = "dropdown-content">
-                     <button id = "breakfast" class = "dropdown-item" >Breakfast</button>
-                     <button id = "lunch" class = "dropdown-item" >Lunch</button>
-                     <button id = "dinner" class = "dropdown-item">Dinner</button>
-                  </div>
-               </div>
-            </div>
-
-
-        <div class="mt-4">
-            <button id="submitbutton" class="button">Find my genre!</button>
-        </div>
-
-      </div>
-      
-      
-    </div>
-
-    
-    
-    
   </div>
-  <script src="js/script.js" type="text/javascript" defer></script>
+
+  <div id="genre-results">
+    <!--genre results go here-->
+  </div>
+
+  <div id="rec-results">
+    <!--rec results go here-->
+  </div>
+
+  <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
